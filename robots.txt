@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /index.html
-Host: geektop.ru
-Sitemap: http://geektop.ru/sitemap.xml
+Host: gtproject.vercel.app
+Sitemap: https://https://gtproject.vercel.app/sitemap.xml
