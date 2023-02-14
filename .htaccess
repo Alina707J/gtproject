@@ -3,13 +3,13 @@ Options -Indexes
 
 RewriteEngine On
 
-' # RewriteCond %{HTTP:HTTPS} !=on [NC]
-' # RewriteRule ^(.*)$ https://geektop.ru/$1 [R=301,L]
-' # SetEnvIf X-Forwarded-Proto https HTTPS=on
+RewriteCond %{HTTP:HTTPS} !=on [NC]
+RewriteRule ^(.*)$ https://gtproject.vercel.app//$1 [R=301,L]
+SetEnvIf X-Forwarded-Proto https HTTPS=on
 
-RewriteCond %{HTTP_HOST} .
-RewriteCond %{HTTP_HOST} www.geektop.ru [NC]
-RewriteRule (.*) http://geektop.ru/$1 [R=301,L]
+' # RewriteCond %{HTTP_HOST} .
+' # RewriteCond %{HTTP_HOST} www.geektop.ru [NC]
+' # RewriteRule (.*) http://geektop.ru/$1 [R=301,L]
 
 RewriteCond %{HTTP_USER_AGENT} wget [NC]
 RewriteRule .* - [F]
