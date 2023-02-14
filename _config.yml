@@ -5,7 +5,7 @@ description: Новости электроники, технологий, сов
 themecolor: "#202225"
 imagehome: img/geektop.jpg
 baseurl: "/"
-url: "https://gtproject.vercel.app/"
+url: "https://gtproject.vercel.app"
 
 plugins: [jekyll-paginate-v2]
 category_dir: blog
